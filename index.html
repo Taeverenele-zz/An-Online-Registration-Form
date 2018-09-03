@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Treehouse-Project-3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <h1>The Code Review</h1>
+    </div>
+    <div class="container">
+      <form class="code-review">
+        <div class="bottom-border">
+          <div class="secondary-header">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox.</p>
+          </div>
+        </div>
+        <div class="background-color">
+          <fieldset class="first-fieldset">
+            <legend>Contact Information</legend>
+            <div class="block">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="user_name" required placeholder="Required"><br>
+            </div>
+            <div class="block">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="user_email" required placeholder="Required"><br>
+            </div>
+            <div class="block">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="user_phone"><br>
+            </div>
+            <div class="block">
+              <label for="street">Street Address</label>
+              <input type="text" id="street" name="user_street_address"><br>
+            </div>
+            <div class="block">
+              <label for="city">City</label>
+              <input type="text" id="city" name="user_city"><br>
+            </div>
+            <div class="block">
+              <label for=state>State</label><br>
+              <select id="state" name="user_state">
+                <option value="">Choose State</option>
+                <option value="alaska">Alaska</option>
+                <option value="arizona">Arizona</option>
+                <option value="california">California</option>
+                <option value="colorado">Colorado</option>
+                <option value="florida">Florida</option>
+                <option value="pennsylvania">Pennsylvania</option>
+                <option value="texas">Texas</option>
+                <option value="washington">Washington</option>
+              </select><br>
+            </div>
+            <div class="block zip-wrapper">
+              <label for="zip">Zip Code</label>
+              <input type="text" id="zip" name="user_zip_code">
+              <div class="block zip-code-input">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="second-fieldset">
+            <legend>Newsletter</legend>
+            <label class="newsletter">Select the newsletter you would like to receive</label>
+              <input type="checkbox" id="html_news" value="html_news" name="user_newsletter">
+              <label for="html_news" class="light">HTML News</label><br>
+              <input type="checkbox" id="css_news" value="css_news" name="user_newsletter">
+              <label for="css_news" class="light">CSS News</label><br>
+              <input type="checkbox" id="javascript_news" value="javascript_news" name="user_newsletter">
+              <label for="javascript_news" class="light">Javascript News</label>
+            <label class="newsletter">Newsletter format</label>
+              <input type="radio" id="html" value="html" name="user_format">
+              <label for="html" class="light">HTML</label><br>
+              <input type="radio" id="plain" value="plain" name="user_format">
+              <label for="plain" class="light">Plain text</label>
+            <label for="other_topics" class="newsletter">Other topics you'd like to hear about</label>
+            <textarea id="other_topics" name="user_topics"></textarea>
+          </fieldset>
+        </div>
+        <div id="button-wrapper">
+          <button type="submit">Sign Up</button>
+        </div>
+        <footer>Copyright The Code Review</footer>
+      </form>
+    </div>
+  </body>
+</html>
