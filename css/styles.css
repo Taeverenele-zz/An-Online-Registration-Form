@@ -128,6 +128,7 @@ input[id="zip"] {
 textarea {
   height: 150px;
   margin-bottom: 0;
+  resize: none;
 }
 button {
   padding: 19px 39px 18px 39px;
